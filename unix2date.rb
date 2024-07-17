@@ -1,27 +1,27 @@
 class Unix2date < Formula
   desc 'unix2date is a command that converts unixtime included in STDIN to datetime and output'
-  version '0.1.1'
+  version '0.1.2'
   homepage 'https://github.com/miyaz/unix2date'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.1/unix2date_0.1.1_darwin_arm64.tar.gz'
-      sha256 'cb0b27f3cc2f69db72b25bcaadafe4a46a83dd72787e0055e1d91e0cd4743684'
+      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.2/unix2date_0.1.2_darwin_arm64.tar.gz'
+      sha256 '753ce375e20f5b2b873e0bc3e453aada7d10b8293e79a2502053b7b9b622a044'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.1/unix2date_0.1.1_darwin_amd64.tar.gz'
-      sha256 'cc2e9dd2cd5285dba87f4acec15f760f460ee7d8f43e56ff698221c09dbe50fb'
+      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.2/unix2date_0.1.2_darwin_amd64.tar.gz'
+      sha256 '1279666384ec17525d8610fd079fb4b9a21dfb3c6609b2e4473b6392acda0a89'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.1/unix2date_0.1.1_linux_arm64.tar.gz'
-      sha256 'bf4ea7c7e1f717c2fa24985dd75a5f72974196bcef933329f1d93d9c26242a97'
+      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.2/unix2date_0.1.2_linux_arm64.tar.gz'
+      sha256 '76e07c92a8bf722cbf80297ec80648b349fb32f1ba36348acac1318e4a397680'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.1/unix2date_0.1.1_linux_amd64.tar.gz'
-      sha256 'fe8ea24c0cd36071216a88a73879b9a82fd0ce04e25d5aa31e90a42342a71ea9'
+      url 'https://github.com/miyaz/unix2date/releases/download/v0.1.2/unix2date_0.1.2_linux_amd64.tar.gz'
+      sha256 'fd48f4233dfe6279e174af040eb5ebc1358562eabd0fcfa9c254d23a76a7fc46'
     end
   end
 
